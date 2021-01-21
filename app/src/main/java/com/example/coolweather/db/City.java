@@ -1,4 +1,5 @@
-package db;
+package com.example.coolweather.db;
+
 
 import org.litepal.crud.LitePalSupport;
 
@@ -6,6 +7,10 @@ public class City extends LitePalSupport {
     private int id;
     private String cityName;
     private int provinceId;
+    private int cityCode;
+
+    public City() {
+    }
 
     public int getId() {
         return id;
@@ -29,5 +34,13 @@ public class City extends LitePalSupport {
 
     public void setProvinceId(int provinceId) {
         this.provinceId = provinceId;
+    }
+
+    public int getCityCode() {
+        return cityCode;
+    }
+
+    public void setCityCode(int cityCode) {
+        this.cityCode = cityCode;
     }
 }
